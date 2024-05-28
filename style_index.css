@@ -1,0 +1,188 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color:  #bc6c25;
+    padding-bottom: 0.2rem;
+    nav{
+        background-color: #1b260d;
+        color: #fefae0;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 1rem 3rem;
+
+        & .headerLink {
+            cursor: pointer;
+            text-decoration: none;
+            color: #fefae0;
+
+            & h1{
+                font-size: 2rem;
+                span{
+                    color:#bc6c25;
+                }
+            }
+        }
+
+        
+        ul{
+            li{
+                list-style: none;
+                display: inline-block;
+                padding-right: 1rem;
+                a{
+                    text-decoration: none;
+                    color: #fefae0;
+                }
+                a:hover{
+                    color: #dda15e;
+                }
+                &.active > a{
+                    color: #bc6c25;
+                }
+            }
+        }
+    }
+}
+
+.hero{
+    min-height: 20rem;
+    background: url(./images/hero.jpg) no-repeat;
+    background-size: cover;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & div{
+        width: 90%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+
+        & h2{
+            font-size: 3rem;
+            color: #fefae0;
+            width: 35%;
+            text-align: center;
+        }
+
+        & p{
+            font-size: 1.2rem;
+            line-height: 2rem;
+            color: #fefae0;
+            width: 50%;
+            text-align: center;
+        }
+    }
+}
+
+.newsletter{
+    background-color: #1b260d;
+    display: flex;
+    justify-content: center;
+
+    .newsletter-div{
+        width: 40%;
+        text-align: center;
+        color: #fefae0;
+        padding-bottom: 2rem;
+    
+        & h2{
+            font-size: 2rem;
+        }
+    
+        & div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+    
+            & input{
+                background-color: #fefae0;
+                width: 16rem;
+                height: 3rem;
+                border-radius: 0.4rem 0rem 0rem 0.4rem;
+                border: none;
+                padding: 0rem 1rem
+            }
+        
+            & button{
+                background-color: #bc6c25;
+                font-size: 1rem;
+                height: 3rem;
+                padding: 0rem 1rem;
+                border: 0;
+                border-radius: 0rem 0.4rem 0.4rem 0rem;
+            }
+            & button:hover{
+                cursor: pointer;
+            }
+        }  
+    }
+}
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #bc6c25 ;
+    padding: 2rem;
+
+    & .services-container{
+        text-align: center;
+        width: 80%;
+        display: flex;
+        gap: 2rem;
+
+        & .services-box{
+            background-color: #fefae0;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4rem 1rem;
+            box-shadow: 0 0 5px #30280a;
+
+            & img{
+                width: 40%;
+            }
+    
+            & h3{
+                font-size: 1.8rem;
+            }
+    
+            & p{
+                font-size: 1.2rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}
+
+footer{
+    padding-top: 0.2rem;
+    background-color: #fefae0;
+    div{
+        background-color: #1b260d;
+        color: #fefae0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        & a img{
+            width: 3rem;
+        }
+    }
+}
+
